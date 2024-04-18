@@ -4,8 +4,11 @@ from typing import List
 
 # Skeleton code for even_list
 def even_list(int_list: List[int]) -> List[int]:
-    #todo
-    pass
+  even = []
+  for x in int_list:
+    if x % 2 == 0:
+      even.append(x)
+  return even
 
 # Skeleton code for sum_of_squares_of_even
 def sum_of_squares_of_even(even_int_list: List[int]) -> int:
@@ -19,7 +22,7 @@ def main():
  even_int_list = even_list(int_list)
  output = sum_of_squares_of_even(even_int_list)
  print(output)
- 
+
 # Boilerplate code
 if __name__ == "__main__":
  main()
